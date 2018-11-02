@@ -1,0 +1,12 @@
+C:\Users\Giro\source\repos\DB\DB\bin\x86\Debug\Database.mdf
+C:\Users\Giro\source\repos\DB\DB\bin\x86\Debug\Database_log.ldf
+C:\Users\Giro\source\repos\DB\DB\bin\x86\Debug\DB.exe.config
+C:\Users\Giro\source\repos\DB\DB\bin\x86\Debug\DB.exe
+C:\Users\Giro\source\repos\DB\DB\bin\x86\Debug\DB.pdb
+C:\Users\Giro\source\repos\DB\DB\obj\x86\Debug\DB.csprojAssemblyReference.cache
+C:\Users\Giro\source\repos\DB\DB\obj\x86\Debug\DB.Form1.resources
+C:\Users\Giro\source\repos\DB\DB\obj\x86\Debug\DB.Properties.Resources.resources
+C:\Users\Giro\source\repos\DB\DB\obj\x86\Debug\DB.csproj.GenerateResource.cache
+C:\Users\Giro\source\repos\DB\DB\obj\x86\Debug\DB.csproj.CoreCompileInputs.cache
+C:\Users\Giro\source\repos\DB\DB\obj\x86\Debug\DB.exe
+C:\Users\Giro\source\repos\DB\DB\obj\x86\Debug\DB.pdb

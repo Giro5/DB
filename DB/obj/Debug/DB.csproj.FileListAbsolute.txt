@@ -8,3 +8,5 @@ C:\Users\Giro\source\repos\DB\DB\obj\Debug\DB.csproj.GenerateResource.cache
 C:\Users\Giro\source\repos\DB\DB\obj\Debug\DB.csproj.CoreCompileInputs.cache
 C:\Users\Giro\source\repos\DB\DB\obj\Debug\DB.exe
 C:\Users\Giro\source\repos\DB\DB\obj\Debug\DB.pdb
+C:\Users\Giro\source\repos\DB\DB\bin\Debug\Database.mdf
+C:\Users\Giro\source\repos\DB\DB\bin\Debug\Database_log.ldf
