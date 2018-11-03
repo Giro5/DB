@@ -16,7 +16,7 @@ namespace DB
     public partial class Form1 : Form
     {
         const string NameTitle = "DBEditor";
-        private OleDbConnection connect = new OleDbConnection();
+        public OleDbConnection connect = new OleDbConnection();
         private DataSet ds;
         private OleDbDataAdapter[] adapters = new OleDbDataAdapter[0];
         private DataGridView[] dataGrids = new DataGridView[0];
@@ -75,11 +75,7 @@ namespace DB
 
         private void saveMenuItem_Click(object sender, EventArgs e)
         {
-            //for (int i = 0; i < adapters.Length; i++)
-            //{
-            //    adapters[i].InsertCommand(new OleDbCommand($"UPDATE *"))
-            //    adapters[i].Update(ds.Tables[i]);
-            //}
+
         }
 
         private void saveAsMenuItem_Click(object sender, EventArgs e)
@@ -132,11 +128,21 @@ namespace DB
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
             tabControl1.TabPages.Remove(tabControl1.SelectedTab);
+            if (tabControl1.TabPages.Count == 0)
+                toolStripStatusLabel1.Text = "Ready";
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
             tabControl1.TabPages.Clear();
+            toolStripStatusLabel1.Text = "Ready";
+        }
+
+        private void buttonInsert_Click(object sender, EventArgs e)
+        {
+            FormInsert form = new FormInsert();
+            form.Show();
+
         }
     }
 }

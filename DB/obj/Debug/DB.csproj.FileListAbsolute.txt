@@ -10,3 +10,4 @@ C:\Users\Giro\source\repos\DB\DB\obj\Debug\DB.exe
 C:\Users\Giro\source\repos\DB\DB\obj\Debug\DB.pdb
 C:\Users\Giro\source\repos\DB\DB\bin\Debug\Database.mdf
 C:\Users\Giro\source\repos\DB\DB\bin\Debug\Database_log.ldf
+C:\Users\Giro\source\repos\DB\DB\obj\Debug\DB.FormInsert.resources

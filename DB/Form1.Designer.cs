@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Tables");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Queries");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Forms");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Reports");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Tables");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Queries");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Forms");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Reports");
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,13 +46,14 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonUpdate = new System.Windows.Forms.Button();
+            this.buttonInsert = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
@@ -164,7 +165,9 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.buttonDelete);
+            this.groupBox1.Controls.Add(this.buttonUpdate);
+            this.groupBox1.Controls.Add(this.buttonInsert);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(0, 24);
@@ -175,19 +178,48 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Menu";
             // 
-            // button1
+            // buttonDelete
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(12, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 55);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "New Table";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonDelete.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.buttonDelete.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDelete.ForeColor = System.Drawing.Color.Black;
+            this.buttonDelete.Location = new System.Drawing.Point(192, 16);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(86, 55);
+            this.buttonDelete.TabIndex = 3;
+            this.buttonDelete.Text = "Delete";
+            this.buttonDelete.UseVisualStyleBackColor = false;
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.buttonUpdate.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonUpdate.ForeColor = System.Drawing.Color.Black;
+            this.buttonUpdate.Location = new System.Drawing.Point(100, 16);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(86, 55);
+            this.buttonUpdate.TabIndex = 2;
+            this.buttonUpdate.Text = "Update";
+            this.buttonUpdate.UseVisualStyleBackColor = false;
+            // 
+            // buttonInsert
+            // 
+            this.buttonInsert.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.buttonInsert.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonInsert.ForeColor = System.Drawing.Color.Black;
+            this.buttonInsert.Location = new System.Drawing.Point(8, 16);
+            this.buttonInsert.Name = "buttonInsert";
+            this.buttonInsert.Size = new System.Drawing.Size(86, 55);
+            this.buttonInsert.TabIndex = 1;
+            this.buttonInsert.Text = "Insert";
+            this.buttonInsert.UseVisualStyleBackColor = false;
+            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
             // splitContainer1
             // 
@@ -218,19 +250,19 @@
             this.treeView1.FullRowSelect = true;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            treeNode1.Name = "Root0";
-            treeNode1.Text = "Tables";
-            treeNode2.Name = "Root1";
-            treeNode2.Text = "Queries";
-            treeNode3.Name = "Root2";
-            treeNode3.Text = "Forms";
-            treeNode4.Name = "Root3";
-            treeNode4.Text = "Reports";
+            treeNode5.Name = "Root0";
+            treeNode5.Text = "Tables";
+            treeNode6.Name = "Root1";
+            treeNode6.Text = "Queries";
+            treeNode7.Name = "Root2";
+            treeNode7.Text = "Forms";
+            treeNode8.Name = "Root3";
+            treeNode8.Text = "Reports";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4});
+            treeNode5,
+            treeNode6,
+            treeNode7,
+            treeNode8});
             this.treeView1.Size = new System.Drawing.Size(214, 629);
             this.treeView1.TabIndex = 0;
             this.treeView1.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_MouseDoubleClick);
@@ -251,18 +283,11 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
             this.toolStripMenuItem2,
             this.toolStripSeparator2,
             this.toolStripMenuItem3});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(121, 76);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(120, 22);
-            this.toolStripMenuItem1.Text = "Save";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(121, 54);
             // 
             // toolStripMenuItem2
             // 
@@ -330,17 +355,18 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button buttonUpdate;
+        private System.Windows.Forms.Button buttonInsert;
     }
 }
 
