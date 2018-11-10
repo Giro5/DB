@@ -9,3 +9,4 @@ C:\Users\Giro\source\repos\DB\DB\obj\x64\Debug\DB.csproj.GenerateResource.cache
 C:\Users\Giro\source\repos\DB\DB\obj\x64\Debug\DB.csproj.CoreCompileInputs.cache
 C:\Users\Giro\source\repos\DB\DB\obj\x64\Debug\DB.exe
 C:\Users\Giro\source\repos\DB\DB\obj\x64\Debug\DB.pdb
+C:\Users\Giro\source\repos\DB\DB\obj\x64\Debug\DB.csprojAssemblyReference.cache
